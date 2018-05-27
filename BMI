@@ -1,0 +1,30 @@
+# FisrtProgramBMI
+
+#include <iostream> //引用iostream函式庫
+using namespace std; //c++的命名空間 (表示cout cin是std這班的)
+
+int main() 
+{
+	double W, H, BMI; //設定變數
+
+	cout << "Please enter your height(m) " << endl; //顯示輸入身高
+	cin >> H; //輸入身高
+	cout << "Please enter your weight(kg)" << endl; //顯示輸入體重
+	cin >> W; //輸入體重
+
+	BMI = W / (H*H); //運算BMI
+	cout << "Your BMI is    " << BMI << endl << endl; //顯示BMI值
+
+
+	            //顯示BMI值範圍
+	cout<< "BMI VALUES" << endl
+		<< "Under weight : less than 18.5" << endl
+		<< "Normal       : between 18.5 and 24.9" << endl
+		<< "Overweight   : between 25   and 29.9" << endl
+		<< "Obese        : 30 or greater" << endl;
+	
+
+	system("pause");
+	return 0;
+
+}
